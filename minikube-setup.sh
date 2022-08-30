@@ -8,7 +8,7 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-
 sudo instiall minikube-linux-amd64 /usr/local/bin/minikube
 
 #make yourself the owner of docker.sock
-sudo chown -R $USER /var/run/
+sudo chown $USER /var/run/docker.sock
 
 #start minikube, create a node
 minikube start --force
